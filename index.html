@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <svg display='none'>
+        <symbol id="like" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 21C12.2115 21 12.5136 20.8627 12.7351 20.7353C18.4048 17.2059 22 13.098 22 8.92157C22 5.45098 19.5529 3 16.29 3C14.427 3 12.9164 3.86275 12 5.18627C11.1037 3.87255 9.57301 3 7.70997 3C4.44713 3 2 5.45098 2 8.92157C2 13.098 5.59517 17.2059 11.2749 20.7353C11.4864 20.8627 11.7885 21 12 21ZM12 19.3431C11.9597 19.3431 11.8892 19.2941 11.7986 19.2255C7.57905 16.5 3.62135 12.5686 3.62135 8.92157C3.62135 6.31373 5.35347 4.57843 7.68983 4.57843C9.58308 4.57843 10.6707 5.72549 11.3152 6.70588C11.5871 7.09804 11.7583 7.20588 12 7.20588C12.2417 7.20588 12.3927 7.08824 12.6848 6.70588C13.3797 5.7451 14.427 4.57843 16.3102 4.57843C18.6465 4.57843 20.3787 6.31373 20.3787 8.92157C20.3787 12.5686 16.4209 16.5 12.2115 19.2255C12.1108 19.2941 12.0403 19.3431 12 19.3431Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 19.3432C11.9597 19.3432 11.8892 19.2942 11.7986 19.2255C7.57904 16.5001 3.62134 12.5687 3.62134 8.92163C3.62134 6.31379 5.35346 4.57849 7.68982 4.57849C9.58307 4.57849 10.6707 5.72555 11.3152 6.70594C11.5871 7.0981 11.7583 7.20594 12 7.20594C12.2417 7.20594 12.3927 7.08829 12.6848 6.70594C13.3796 5.74516 14.427 4.57849 16.3102 4.57849C18.6465 4.57849 20.3786 6.31379 20.3786 8.92163C20.3786 12.5687 16.4209 16.5001 12.2115 19.2255C12.1108 19.2942 12.0403 19.3432 12 19.3432Z"
+                 />
+        </symbol>
+    </svg>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="img/header-logo.png" alt="" class="header__logo-icon">
+                        <span class="header__logo-title">HorDog</span>
+                    </a>
+                    <form action="#" class="header__search">
+                        <input placeholder="Поиск" type="text" class="header__search-input">
+                        <img src="img/search-icon.png" alt="" class="header__search-icon">
+                    </form>
+                    <div class="header__right">
+                        <a href="#" class="header__right-icon">
+                            <img src="img/header-right01.png" alt="">
+                        </a>
+                        <a href="#" class="header__right-icon">
+                            <img src="img/header-right02.png" alt="">
+                        </a>
+                        <a href="#" class="header__right-icon">
+                            <img src="img/header-right03.png" alt="">
+                        </a>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__mobile">
+            <div class="header__mobile-top">
+                <img src="img/close.svg" alt="" class="header__mobile-top__close">
+                <a href="#" class="header__mobile-top__sign">Войти</a>
+            </div>
+            <nav class="header__mobile-menu">
+                <a href="#" class="header__mobile-menu__link">Каталог</a>
+                <a href="#" class="header__mobile-menu__link">Избранное</a>
+                <a href="#" class="header__mobile-menu__link">Акции</a>
+                <a href="#" class="header__mobile-menu__link">Новости</a>
+                <a href="#" class="header__mobile-menu__link">Отзывы</a>
+            </nav>
+            <ul class="header__mobile-list">
+                <li class="header__mobile-list__item">
+                    <a href="#">Оплата и доставка</a>
+                </li>
+                <li class="header__mobile-list__item">
+                    <a href="#">Часто спрашивают</a>
+                </li>
+                <li class="header__mobile-list__item">
+                    <a href="#">Обратная связь</a>
+                </li>
+                <li class="header__mobile-list__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            <div class="header__mobile-bottom">
+                <div class="header__mobile-bottom__content">
+                    <div class="header__mobile-bottom__content-title">Остались вопросы?</div>
+                    <div class="header__mobile-bottom__content-text">Обратитесь в нашу службу поддержки</div>
+                </div>
+                <div class="header__mobile-bottom__btn">
+                    <a href="#">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <section class="hero" style="background-image: url(img/hero-bg.jpg);">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__content-title">Крафтовые лакомства для собак</h1>
+                        <div class="hero__content-text">Всегда свежие лакомства ручной работы с доставкой по России и Миру</div>
+                        <div class="hero__content-btn">
+                            <a href="#">Каталог</a>
+                        </div>
+                    </div>
+                    <div class="hero__img">
+                        <img src="img/hero-img.png" alt="">
+                    </div>
+                </div>
+                <div class="hero__items">
+                    <div class="hero__item">
+                       <img src="img/hero-item-1.png" alt="" class="hero__item-icon">
+                        <div class="hero__item-title">Наборы</div>
+                    </div>
+                    <div class="hero__item">
+                        <img src="img/hero-item-2.png" alt="" class="hero__item-icon">
+                        <div class="hero__item-title">Лакомства</div>
+                    </div>
+                    <div class="hero__item">
+                        <img src="img/hero-item-3.png" alt="" class="hero__item-icon">
+                        <div class="hero__item-title">Аксессуары</div>
+                    </div>
+                    <div class="hero__item">
+                        <img src="img/hero-item-4.png" alt="" class="hero__item-icon">
+                        <div class="hero__item-title">Игрушки</div>
+                    </div>
+                    <div class="hero__item">
+                        <img src="img/hero-item-5.png" alt="" class="hero__item-icon">
+                        <div class="hero__item-title">Рога</div>
+                    </div>
+                    <div class="hero__item">
+                        <img src="img/hero-item-6.png" alt="" class="hero__item-icon">
+                        <div class="hero__item-title">Масла</div>
+                    </div>
+                </div>
+                <div class="hero__block">
+                    <div class="hero__block-content">
+                        <h2 class="hero__block-content__title">
+                            Подарок за первый заказ!
+                        </h2>
+                        <h4 class="hero__block-content__subtitle">
+                            Легкое говяжье - пластины
+                        </h4>
+                    </div>
+                    <div class="hero__block-img">
+                        <img src="img/hero-block-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hits">
+            <div class="container">
+                <h2 class="section__title">Хиты</h2>
+                <div class="hits__slider">
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-1.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-1'>1 200 ₽</span>
+                                <span class='hits__item-content__price-2'>840 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Рога оленя для собак весом от 10 до 30 кг. Размер L
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions">-30%</div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-2.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>450 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">200 мл</div>
+                            <div class="hits__item-content__description">
+                                Сельдевое масло
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-3.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-1'>550 ₽</span>
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Бублик из бычьего корня
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions">-10%</div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-4.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>240 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Лопаточный хрящ говяжий для собак
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions hits__item-actions-new">Новинка</div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-1.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-1'>1 200 ₽</span>
+                                <span class='hits__item-content__price-2'>840 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Рога оленя для собак весом от 10 до 30 кг. Размер L
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions">-30%</div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-2.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>450 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">200 мл</div>
+                            <div class="hits__item-content__description">
+                                Сельдевое масло
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-3.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-1'>550 ₽</span>
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Бублик из бычьего корня
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions">-10%</div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-4.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>240 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Лопаточный хрящ говяжий для собак
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions hits__item-actions-new">Новинка</div>
+                    </div>
+                </div>
+                <div class="hits__block-slider">
+                    <div class="hits__block-item" style="background-image: url(img/hits-block-1.png);">
+                        <div class="hits__block-item__content">
+                            <div class="hits__block-item__content-title">Наборы</div>
+                            <div class="hits__block-item__content-text">для дрессировки</div>
+                            <div class="hits__block-item__content-subtitle">от 840 ₽</div>
+                        </div>
+                    </div>
+                    <div class="hits__block-item" style="background-image: url(img/hits-block-2.png);">
+                        <div class="hits__block-item__content">
+                            <div class="hits__block-item__content-title">Микс масел</div>
+                            <div class="hits__block-item__content-text">пищевая здоровая натуральная добавка</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="goodies">
+            <div class="container">
+                <h2 class="section__title">Лакомства</h2>
+                <div class="hits__slider">
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-1.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>380 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 кг</div>
+                            <div class="hits__item-content__description">
+                                Желудки утиные сушено-вяленые
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-2.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>300 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Мелкая говяжья сушено-вяленая жилка
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-3.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">14 шт</div>
+                            <div class="hits__item-content__description">
+                                Печенья с яблоком (печень говяжья, сердце говяжье)
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-4.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>330 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Свиные уши<br> для собак
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-1.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>380 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 кг</div>
+                            <div class="hits__item-content__description">
+                                Желудки утиные сушено-вяленые
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-2.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>300 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Мелкая говяжья сушено-вяленая жилка
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-3.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">14 шт</div>
+                            <div class="hits__item-content__description">
+                                Печенья с яблоком (печень говяжья, сердце говяжье)
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/goodies-4.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>330 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Свиные уши<br> для собак
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="toys">
+            <div class="container">
+                <h2 class="section__title">Игрушки</h2>
+                <div class="hits__slider">
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/toys-1.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>590 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Игрушка-погрызушка для мелких пород
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/toys-2.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>790 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Игрушка-погрызушка для средних пород
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-3.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-1'>550 ₽</span>
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Бублик из бычьего корня
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions">-10%</div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/toys-4.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Игрушка-погрызушка для крупных пород
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/toys-1.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>590 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Игрушка-погрызушка для мелких пород
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/toys-2.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>790 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Игрушка-погрызушка для средних пород
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/hits-3.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-1'>550 ₽</span>
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">100 г</div>
+                            <div class="hits__item-content__description">
+                                Бублик из бычьего корня
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                        <div class="hits__item-actions">-10%</div>
+                    </div>
+                    <div class="hits__item">
+                        <div class="hits__item-img">
+                            <img src="img/toys-4.png" alt="">
+                        </div>
+                        <div class="hits__item-content">
+                            <div class="hits__item-content__price">
+                                <span class='hits__item-content__price-2'>495 ₽</span>
+                            </div>
+                            <div class="hits__item-content__col">1 шт</div>
+                            <div class="hits__item-content__description">
+                                Игрушка-погрызушка для крупных пород
+                            </div>
+                            <div class="section__btn">
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+                        <div class="hits__item-like">
+                            <svg class='hits__item-like__icon'>
+                                <use xlink:href='#like'></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <section class="actions">
+            <div class="container">
+                <h2 class="section__title">Акции и спецпредложения</h2>
+                <div class="actions__slider">
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-1.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Собачий Листопад -2”
+                        </div>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-2.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Собачий Листопад -1”
+                        </div>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-3.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Хордог Лото-1”
+                        </div>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-4.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Победа”
+                        </div>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-1.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Собачий Листопад -2”
+                        </div>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-2.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Собачий Листопад -1”
+                        </div>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-3.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Хордог Лото-1”
+                        </div>
+                    </div>
+                    <div class="actions__item">
+                        <div class="actions__item-img">
+                            <img src="img/actions-4.png" alt="" class="">
+                        </div>
+                        <div class="actions__item-title">
+                            Набор “Победа”
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2 class="section__title">Новости</h2>
+                <div class="news__slider">
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-1.png" alt="">
+                        </div>
+                        <div class="news__item-date">12 май 2021</div>
+                        <div class="news__item-title">
+                            Дрессировка щенка: что нужно знать
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-2.png" alt="">
+                        </div>
+                        <div class="news__item-date">08 июл 2021</div>
+                        <div class="news__item-title">
+                            Идём гулять с собакой в лес
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-3.png" alt="">
+                        </div>
+                        <div class="news__item-date">16 авг 2021</div>
+                        <div class="news__item-title">
+                            Сухие корма для собак
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-4.png" alt="">
+                        </div>
+                        <div class="news__item-date">02 сен 2021</div>
+                        <div class="news__item-title">
+                            6 лакомств для собак
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-1.png" alt="">
+                        </div>
+                        <div class="news__item-date">12 май 2021</div>
+                        <div class="news__item-title">
+                            Дрессировка щенка: что нужно знать
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-2.png" alt="">
+                        </div>
+                        <div class="news__item-date">08 июл 2021</div>
+                        <div class="news__item-title">
+                            Идём гулять с собакой в лес
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-3.png" alt="">
+                        </div>
+                        <div class="news__item-date">16 авг 2021</div>
+                        <div class="news__item-title">
+                            Сухие корма для собак
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="img/news-4.png" alt="">
+                        </div>
+                        <div class="news__item-date">02 сен 2021</div>
+                        <div class="news__item-title">
+                            6 лакомств для собак
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section__title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="reviews__item">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-top__img">
+                                <img src="img/reviews-1.png" alt="">
+                            </div>
+                            <div class="reviews__item-top__content">
+                                <div class="reviews__item-top__content-title">
+                                    Рога оленя для собак весом от 10 до 30 кг. Размер L
+                                </div>
+                                <div class="reviews__item-top__content-stars">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                </div>
+                                <div class="reviews__item-top__content-btn">
+                                    <a href="#">Все отзывы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__item-bottom">
+                            <div class="reviews__item-bottom__header">
+                                <div class="reviews__item-bottom__header-name">Анастасия</div>
+                                <div class="reviews__item-bottom__header-date">08 июл 2021</div>
+                            </div>
+                            <div class="reviews__item-bottom__info">Елизово</div>
+                            <div class="reviews__item-bottom__description">
+                                <p>
+                                    «Вчера мы получили посылку с вкусняшками от @hordog.ru
+                                    В нашем наборе много разновидностей лакомств, в том числе рога оленя, рубец говяжий, баранье легкое, нос говяжий, копыто
+                                    северного оленя, уши говяжьи, вымя говяжье, корень говяжий, печенье с яблоком.Такого запаса нам точно хватит надолго.
+                                </p>
+                                <p>
+                                    Лайфун уже оценил вкусняшки! Спасибо за такой замечательный набор!»
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-top__img">
+                                <img src="img/reviews-2.png" alt="">
+                            </div>
+                            <div class="reviews__item-top__content">
+                                <div class="reviews__item-top__content-title">
+                                    Бублик из бычьего<br> корня
+                                </div>
+                                <div class="reviews__item-top__content-stars">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                </div>
+                                <div class="reviews__item-top__content-btn">
+                                    <a href="#">Все отзывы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__item-bottom">
+                            <div class="reviews__item-bottom__header">
+                                <div class="reviews__item-bottom__header-name">Оксана</div>
+                                <div class="reviews__item-bottom__header-date">12 авг 2021</div>
+                            </div>
+                            <div class="reviews__item-bottom__info">Йошкар-Ола, отзыв из инстгарам hordog.staya</div>
+                            <div class="reviews__item-bottom__description">
+                                «Ну и как уж без подарка ,для моей девочки))) Огромное спасибо за вкусняхи @hordog.ru Одна упаковка чего стоит а уж то
+                                что было внутри вызвало полных восторг у нашей девочки. Что приятно удивило что при покупке у них в магазине сделали
+                                скидку))) И положили презент»
+                            </div>
+                            <div class="reviews__item-bottom__gallery">
+                                <div class="reviews__item-bottom__gallery-item">
+                                    <img src="img/reviews-bottom-1.png" alt="">
+                                </div>
+                                <div class="reviews__item-bottom__gallery-item">
+                                    <img src="img/reviews-bottom-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-top__img">
+                                <img src="img/reviews-1.png" alt="">
+                            </div>
+                            <div class="reviews__item-top__content">
+                                <div class="reviews__item-top__content-title">
+                                    Рога оленя для собак весом от 10 до 30 кг. Размер L
+                                </div>
+                                <div class="reviews__item-top__content-stars">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                    <img src="img/star.svg" alt="">
+                                </div>
+                                <div class="reviews__item-top__content-btn">
+                                    <a href="#">Все отзывы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__item-bottom">
+                            <div class="reviews__item-bottom__header">
+                                <div class="reviews__item-bottom__header-name">Анастасия</div>
+                                <div class="reviews__item-bottom__header-date">08 июл 2021</div>
+                            </div>
+                            <div class="reviews__item-bottom__info">Елизово</div>
+                            <div class="reviews__item-bottom__description">
+                                <p>
+                                    «Вчера мы получили посылку с вкусняшками от @hordog.ru
+                                    В нашем наборе много разновидностей лакомств, в том числе рога оленя, рубец говяжий, баранье легкое, нос
+                                    говяжий, копыто
+                                    северного оленя, уши говяжьи, вымя говяжье, корень говяжий, печенье с яблоком.Такого запаса нам точно
+                                    хватит надолго.
+                                </p>
+                                <p>
+                                    Лайфун уже оценил вкусняшки! Спасибо за такой замечательный набор!»
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-top__img">
+                                <img src="img/reviews-2.png" alt="">
+                            </div>
+                            <div class="reviews__item-top__content">
+                                <div class="reviews__item-top__content-title">
+                                    Бублик из бычьего<br> корня
+                                </div>
+                                <div class="reviews__item-top__content-stars">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                    <img src="img/star-fill.svg" alt="">
+                                </div>
+                                <div class="reviews__item-top__content-btn">
+                                    <a href="#">Все отзывы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__item-bottom">
+                            <div class="reviews__item-bottom__header">
+                                <div class="reviews__item-bottom__header-name">Оксана</div>
+                                <div class="reviews__item-bottom__header-date">12 авг 2021</div>
+                            </div>
+                            <div class="reviews__item-bottom__info">Йошкар-Ола, отзыв из инстгарам hordog.staya</div>
+                            <div class="reviews__item-bottom__description">
+                                «Ну и как уж без подарка ,для моей девочки))) Огромное спасибо за вкусняхи @hordog.ru Одна упаковка чего
+                                стоит а уж то
+                                что было внутри вызвало полных восторг у нашей девочки. Что приятно удивило что при покупке у них в магазине
+                                сделали
+                                скидку))) И положили презент»
+                            </div>
+                            <div class="reviews__item-bottom__gallery">
+                                <div class="reviews__item-bottom__gallery-item">
+                                    <img src="img/reviews-bottom-1.png" alt="">
+                                </div>
+                                <div class="reviews__item-bottom__gallery-item">
+                                    <img src="img/reviews-bottom-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="container">
+                <div class="hero__block">
+                    <div class="hero__block-content">
+                        <h2 class="hero__block-content__title">
+                            Подарок за первый заказ!
+                        </h2>
+                        <h4 class="hero__block-content__subtitle">
+                            Легкое говяжье - пластины
+                        </h4>
+                    </div>
+                    <div class="hero__block-img">
+                        <img src="img/hero-block-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="see">
+            <div class="container">
+                <h2 class="section__title">Вы смотрели</h2>
+                <div class="see__slider">
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-1.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>590 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">1 шт</div>
+                                <div class="see__description">
+                                    Игрушка-погрызушка для мелких пород
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-2.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>790 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">1 шт</div>
+                                <div class="see__description">
+                                    Игрушка-погрызушка для средних пород
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-3.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>495 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">1 шт</div>
+                                <div class="see__description">
+                                    Игрушка-погрызушка для средних пород
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-4.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-1'>550 ₽</span>
+                                    <span class='hits__item-content__price-2'>495 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">100 г</div>
+                                <div class="see__description">
+                                    Бублик из бычьего корня
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                            <div class="hits__item-actions see__actions">-10%</div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-5.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>340 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">14 шт</div>
+                                <div class="see__description">
+                                    Печенья с яблоком (печень говяжья, сер...
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-1.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>590 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">1 шт</div>
+                                <div class="see__description">
+                                    Игрушка-погрызушка для мелких пород
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-2.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>790 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">1 шт</div>
+                                <div class="see__description">
+                                    Игрушка-погрызушка для средних пород
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-3.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>495 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">1 шт</div>
+                                <div class="see__description">
+                                    Игрушка-погрызушка для средних пород
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-4.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-1'>550 ₽</span>
+                                    <span class='hits__item-content__price-2'>495 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">100 г</div>
+                                <div class="see__description">
+                                    Бублик из бычьего корня
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                            <div class="hits__item-actions see__actions">-10%</div>
+                        </div>
+                        <div class="hits__item">
+                            <div class="hits__item-img">
+                                <img src="img/see-5.png" alt="">
+                            </div>
+                            <div class="hits__item-content">
+                                <div class="hits__item-content__price">
+                                    <span class='hits__item-content__price-2'>340 ₽</span>
+                                </div>
+                                <div class="hits__item-content__col">14 шт</div>
+                                <div class="see__description">
+                                    Печенья с яблоком (печень говяжья, сер...
+                                </div>
+                            </div>
+                            <div class="hits__item-like">
+                                <svg class='hits__item-like__icon'>
+                                    <use xlink:href='#like'></use>
+                                </svg>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" style="background-image: url(img/footer-bg.jpg);">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__top-content">
+                        <div class="footer__top-content__title">
+                            Остались<br> вопросы?
+                        </div>
+                        <div class="footer__top-content__subtitle">
+                            Заполните пожалуйста поля ниже, чтобы мы могли связаться с вами
+                        </div>
+                        <form action="#" class="footer__top-content__form">
+                            <input placeholder="Ваше имя" type="text" class="footer__top-content__form-input">
+                            <input placeholder="Телефон или Email" type="text" class="footer__top-content__form-input">
+                            <button type="submit" class="footer__top-content__form-button">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="footer__top-img">
+                        <img src="img/footer-img.png" alt="">
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-left">
+                        <a href="#" class="footer__bottom-left__logo">
+                            <img src="img/footer-logo.png" alt="">
+                        </a>
+                        <div class="footer__bottom-left__text">
+                            © «Интернет-магазин натуральных<br> лакомств для собак HorDog.ru»
+                        </div>
+                    </div>
+                    <nav class="footer__bottom-menu">
+                        <a href="#" class="footer__bottom-menu__link">Каталог</a>
+                        <a href="#" class="footer__bottom-menu__link">Акции</a>
+                        <a href="#" class="footer__bottom-menu__link">Новости</a>
+                        <a href="#" class="footer__bottom-menu__link">Отзывы</a>
+                    </nav>
+                    <nav class="footer__bottom-menu">
+                        <a href="#" class="footer__bottom-menu__link">Оплата и доставка</a>
+                        <a href="#" class="footer__bottom-menu__link">Часто спрашивают</a>
+                        <a href="#" class="footer__bottom-menu__link">Обратная связь</a>
+                        <a href="#" class="footer__bottom-menu__link">Контакты</a>
+                    </nav>
+                    <div class="footer__bottom-right">
+                        <div class="footer__bottom-right__title">Мы всегда на связи</div>
+                        <div class="footer__bottom-right__number">8 (917) 717-21-79</div>
+                        <div class="footer__bottom-right__email">hordog.ru@gmail.com</div>
+                        <div class="footer__bottom-right__socials">
+                            <a href="#" class="footer__bottom-right__socials-item">
+                                <img src="img/telegram.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__bottom-right__socials-item">
+                                <img src="img/whatsapp.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__bottom-right__socials-item">
+                                <img src="img/viber.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__bottom-right__socials-item">
+                                <img src="img/instagram.svg" alt="">
+                            </a>
+                            <a href="#" class="footer__bottom-right__socials-item">
+                                <img src="img/vk.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
